@@ -1,23 +1,31 @@
+import React, { useState } from "react";
+import Page from "./components/Page";
 import Nav from "./components/Nav";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/contact";
-import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 function App() {
+  const [pages] = useState([
+    { name: "About Me" },
+    { name: "Portfolio" },
+    { name: "Contact" },
+    { name: "Resume" },
+  ]);
+
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+
   return (
-    <div>
-      <div id='trailer'>
-        <Nav />
-        <About />
-        <Portfolio />
-        <Contact />
-        <Resume />
-        <Footer />
-      </div>
+    <div className="scrollbar-hide">
+      <Nav
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      ></Nav>
+      <main>
+        <Page currentPage={currentPage}></Page>
+      </main>
+      <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
