@@ -1,20 +1,5 @@
 import React from 'react'
 import pdf from '../assets/Griffin-Hobbs-Resume.pdf'
-import { 
-  AiOutLineHtml5, 
-  SiJavascript, 
-  SiCss3, 
-  SiMysql, 
-  AiFillGithub, 
-  DiMongodb,
-  SiReact,
-  IoLogoNodejs,
-  SiBootstrap,
-  AiFillApi,
-  SiHeroku,
-  SiSequelize,
-
-} from 'react-icons/ai'
 
 const Resume = () => {
   return (
