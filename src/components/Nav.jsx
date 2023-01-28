@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#39393A] text-[#FFFAFF]">
       <div>
-        <h1 className="text-5xl font-bold">Griffin</h1>
+        <h1 className="text-5xl text-[#81968F] font-bold">G</h1>
       </div>
 
       {/* Desktop Menu */}
